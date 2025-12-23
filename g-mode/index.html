@@ -1,43 +1,64 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>E Şıkkı — Kavramların Birleşimi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <title>G-MODE ONE • Ultra Prime Hybrid Pulse Engine</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
-    <h1>E Şıkkı</h1>
-    <p class="subtitle">Tüm kavramların birleştiği metin</p>
+  <div class="app standby">
+    <header class="hud-header">
+      <div id="warpStatus">WARP STATUS: STANDBY</div>
+      <div class="subline" id="subline">Control the Flow.</div>
+    </header>
 
-    <article id="poem" class="card">
-      <section>
-        <p>Başlangıçta yalnızca <span class="highlight">Allah’ın</span> nefesi vardı; o nefes, varlığı hem <span class="highlight">bilim</span>le açıklanabilir kıldı hem de <span class="highlight">ilim</span>le hissedilebilir.</p>
-
-        <p>En küçük noktanın içindeki <span class="highlight">kuantum</span> titreşimleri, kâinatın büyük <span class="highlight">rezonansına</span> dönüştü. Her titreşim, insanın <span class="highlight">düşünceyle yaratma</span> kudretini hatırlattı. Çünkü düşünce, görünmeyenin mimarıdır; görünene ise bazen <span class="highlight">zenginlik</span>, bazen farkındalık, bazen de dönüşüm olarak iner.</p>
-
-        <p>Sonra zaman aktı. Sonsuz <span class="highlight">evren</span>, kendi içinde milyarlarca <span class="highlight">galaksi</span> büyüttü; galaksiler <span class="highlight">yıldızlar</span>, yıldızlar <span class="highlight">Güneş</span>, geceye de <span class="highlight">Ay</span> armağan edildi.</p>
-
-        <p>Her şey tek bir <span class="highlight">boyut</span> değil; görünmeyen katmanlar, geçitler ve akışlar var. Ve insanın içindeki <span class="highlight">ruh</span>, bunların arasında yolculuk edebilme kabiliyetine sahip tek yolcudur.</p>
-
-        <p>Kâinat dev bir <span class="highlight">algoritma</span> gibi işler; bazen kusursuzca <span class="highlight">otomatik</span>, bazen bilinçle yön bulur.</p>
-
-        <p>İnsan başını kaldırdığında <span class="highlight">gökyüzü</span>, gönlünü açtığında <span class="highlight">uzay</span> olur içinde. İçte ve dışta ne varsa, aynı kudretin farklı yüzleridir.</p>
-
-        <p class="final">Ve tüm bu kelimeler—senin seçtiklerin—aslında tek bir hakikatin farklı yankılarıdır: Varoluşun sonsuzluğu ve insanın onu anlama çabası.</p>
+    <main class="hud-main">
+      <section class="core-section">
+        <div class="core-wrapper">
+          <div class="core">
+            <div class="spiral"></div>
+            <div class="energy-core"></div>
+          </div>
+        </div>
       </section>
-    </article>
 
-    <div class="controls">
-      <button id="cycle">Vurguyu Değiştir</button>
-      <a class="github" href="#" onclick="alert('README’deki talimatları takip ederek GitHub'a yükleyebilirsiniz.'); return false;">GitHub için talimatlar</a>
-    </div>
+      <section class="systems-panel">
+        <h2>SYSTEMS PANEL</h2>
+        <div class="panel-row">
+          <span class="label"><span class="icon">┈╹ ))</span> Audio</span>
+          <span class="value" id="audioState">READY</span>
+        </div>
+        <div class="panel-row">
+          <span class="label"><span class="icon">∿</span> Pulse Sync</span>
+          <span class="value" id="pulseState">IDLE</span>
+        </div>
+        <div class="panel-row">
+          <span class="label"><span class="icon">⟳</span> Color Mode</span>
+          <span class="value" id="colorMode">PER-PULSE</span>
+        </div>
+        <div class="panel-row">
+          <span class="label"><span class="icon">⇄</span> Spiral Velocity</span>
+          <span class="value" id="velocity">MEDIUM</span>
+        </div>
+        <div class="panel-row">
+          <span class="label"><span class="icon">●</span> Warp Stability</span>
+          <span class="value" id="stability">OPTIMAL</span>
+        </div>
+      </section>
+    </main>
 
-    <footer>
-      <small>Hazırlayan: ChatGPT — Repository hazırlandı.</small>
+    <footer class="hud-footer">
+      <button id="gToggle" class="g-button">G • AKTİF ET</button>
+      <div class="tagline">SGY X-G Hybrid Ultra Prime</div>
+      <a class="back" href="../">← Ana Panel</a>
     </footer>
-  </main>
+  </div>
+
+  <!-- optional wavs (var) -->
+  <audio id="bootWav" preload="auto" src="sounds/boot.wav"></audio>
+  <audio id="pulseWav" preload="auto" src="sounds/pulse.wav"></audio>
+  <audio id="shutdownWav" preload="auto" src="sounds/shutdown.wav"></audio>
 
   <script src="script.js"></script>
 </body>
