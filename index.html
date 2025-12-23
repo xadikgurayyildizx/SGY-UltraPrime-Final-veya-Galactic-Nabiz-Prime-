@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>SGY • Galaktik Nabız • Ultra Prime</title>
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <main class="wrap">
+    <header class="top">
+      <div class="brand" id="brand">SGY</div>
+      <div class="title">
+        <h1>Galaktik Nabız • Ultra Prime</h1>
+        <p>Tek repo. Tek link. Nabız + HUD + Ses + Metin.</p>
+      </div>
+      <div class="status" id="status">STATUS: STANDBY</div>
+    </header>
+
+    <section class="grid">
+      <a class="card" href="./g-mode/">
+        <h2>G-MODE ONE</h2>
+        <p>HUD arayüz • Warp Core • Pulse + ses.</p>
+        <span class="go">Aç →</span>
+      </a>
+
+      <a class="card" href="./galactic-engine/">
+        <h2>Galactic Engine</h2>
+        <p>WebAudio boyutsal ambiyans • tek dokunuş.</p>
+        <span class="go">Aç →</span>
+      </a>
+
+      <a class="card" href="./e-sikki/">
+        <h2>E-Şıkkı</h2>
+        <p>Şiirsel metin • web + markdown.</p>
+        <span class="go">Aç →</span>
+      </a>
+
+      <a class="card" href="./nabiz-text/">
+        <h2>Nabız Metin Motoru</h2>
+        <p>Vurguyu değiştir • minimal demo.</p>
+        <span class="go">Aç →</span>
+      </a>
+    </section>
+
+    <footer class="foot">
+      <small>SGY X-G Hybrid Ultra Prime • Control the Flow</small>
+      <small class="hint">İpucu: Logoya birkaç kez dokun.</small>
+    </footer>
+  </main>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="panel">
+      <div class="big">BIRTHDAY TRANSMISSION</div>
+      <div class="msg" id="bmsg">Babaoğlu Ultra Prime — 23•12</div>
+      <div class="sub">THE PULSE IS US</div>
+      <button id="close" class="btn">Kapat</button>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>
